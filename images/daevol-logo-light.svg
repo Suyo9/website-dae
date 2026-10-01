@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGradLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#818CF8" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+  <!-- Main Brand Name -->
+  <text x="0" y="46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="900" font-size="44" letter-spacing="-0.03em" fill="#FFFFFF">DAE<tspan fill="url(#logoGradLight)">vol</tspan></text>
+  <!-- Tagline underneath -->
+  <text x="0" y="65" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="9.5" letter-spacing="0.01em" fill="#94A3B8">Business Growth. Engineering Excellence. Digital Transformation. AI &amp; Automation.</text>
+</svg>

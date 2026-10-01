@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="100%" height="100%">
+  <defs>
+    <radialGradient id="skyGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#1E293B" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#0F172A" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#070D1E" stop-opacity="1" />
+    </radialGradient>
+    <linearGradient id="glowLine1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#60A5FA" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#818CF8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.2" />
+    </linearGradient>
+    <filter id="glowFilter" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="900" height="620" rx="20" fill="url(#skyGlow)" />
+
+  <!-- Industrial Silhouette / Complex Architectural Lines -->
+  <g opacity="0.4" stroke="#334155" stroke-width="1.5" fill="none">
+    <!-- Refinery Columns & Towers -->
+    <rect x="180" y="240" width="45" height="340" rx="3" fill="#1E293B" />
+    <line x1="202" y1="170" x2="202" y2="240" stroke-width="3" stroke="#475569" />
+    <circle cx="202" cy="170" r="3" fill="#F43F5E" filter="url(#glowFilter)" />
+
+    <rect x="290" y="190" width="60" height="390" rx="4" fill="#1E293B" />
+    <line x1="320" y1="120" x2="320" y2="190" stroke-width="4" stroke="#475569" />
+    <circle cx="320" cy="120" r="4" fill="#F43F5E" filter="url(#glowFilter)" />
+    
+    <!-- Lattice Tower -->
+    <path d="M420 580 L460 210 L500 580" stroke="#475569" stroke-width="2" />
+    <line x1="430" y1="480" x2="490" y2="480" stroke="#475569" />
+    <line x1="440" y1="380" x2="480" y2="380" stroke="#475569" />
+    <line x1="448" y1="280" x2="472" y2="280" stroke="#475569" />
+    <line x1="430" y1="480" x2="480" y2="380" stroke="#334155" />
+    <line x1="490" y1="480" x2="440" y2="380" stroke="#334155" />
+    <line x1="460" y1="150" x2="460" y2="210" stroke-width="3" stroke="#64748B" />
+    <circle cx="460" cy="150" r="4" fill="#38BDF8" filter="url(#glowFilter)" />
+
+    <!-- Distillation Towers -->
+    <rect x="560" y="260" width="50" height="320" rx="25" fill="#1E293B" stroke="#475569" />
+    <rect x="630" y="220" width="70" height="360" rx="35" fill="#1E293B" stroke="#475569" />
+    <line x1="665" y1="160" x2="665" y2="220" stroke-width="3" stroke="#64748B" />
+    <circle cx="665" cy="160" r="3" fill="#F43F5E" filter="url(#glowFilter)" />
+
+    <!-- Connecting Pipe Infrastructure -->
+    <path d="M225 360 H290 M350 320 H440 M480 340 H560 M610 380 H630" stroke="#38BDF8" stroke-width="2" opacity="0.6" />
+    <path d="M200 480 H700" stroke="#475569" stroke-width="3" />
+    <path d="M150 540 H750" stroke="#334155" stroke-width="4" />
+  </g>
+
+  <!-- Glowing Cyan & Purple Cyber-Physical Mesh Lines -->
+  <g stroke="url(#glowLine1)" stroke-width="2" fill="none" filter="url(#glowFilter)">
+    <path d="M720 160 C 600 200, 520 220, 680 320" />
+    <path d="M680 320 C 760 400, 620 480, 500 450" />
+    <path d="M500 450 C 420 420, 380 490, 360 470" />
+    <path d="M680 320 C 580 340, 540 380, 500 450" />
+    <path d="M720 160 C 780 230, 760 280, 680 320" />
+    <path d="M680 320 C 550 280, 480 320, 400 370" />
+  </g>
+
+  <!-- Glowing Arc Highlights -->
+  <circle cx="480" cy="380" r="160" stroke="#4F46E5" stroke-width="1.5" stroke-dasharray="8 10" fill="none" opacity="0.4" />
+  <circle cx="480" cy="380" r="230" stroke="#38BDF8" stroke-width="1" stroke-dasharray="12 14" fill="none" opacity="0.3" />
+
+  <!-- Node 1: GROWTH (Top Right) -->
+  <g transform="translate(680, 150)">
+    <circle cx="0" cy="0" r="32" fill="#1E1B4B" stroke="#6366F1" stroke-width="2" filter="url(#nodeGlow)" />
+    <circle cx="0" cy="0" r="26" fill="#312E81" />
+    <!-- Bar Chart Icon -->
+    <path d="M-10 6 V2 M-4 6 V-4 M2 6 V-8 M8 6 V-12" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" />
+    <text x="44" y="-4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" letter-spacing="0.05em">GROWTH</text>
+    <text x="44" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="400" font-size="11" fill="#94A3B8">Expanding markets. Stronger business.</text>
+  </g>
+
+  <!-- Node 2: AI (Mid Right) -->
+  <g transform="translate(670, 290)">
+    <circle cx="0" cy="0" r="30" fill="#1E1B4B" stroke="#818CF8" stroke-width="2" filter="url(#nodeGlow)" />
+    <circle cx="0" cy="0" r="24" fill="#312E81" />
+    <!-- Brain / Neural Icon -->
+    <path d="M-8 -6 C-12 -6 -12 2 -8 4 C-8 8 -2 8 -2 6 C0 8 6 8 6 4 C10 2 10 -6 6 -6 C6 -10 0 -10 -2 -8 C-4 -10 -8 -10 -8 -6 Z" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+    <text x="42" y="-4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" letter-spacing="0.05em">AI</text>
+    <text x="42" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="400" font-size="11" fill="#94A3B8">Intelligent decisions. Automated outcomes.</text>
+  </g>
+
+  <!-- Node 3: DIGITAL (Lower Right) -->
+  <g transform="translate(630, 420)">
+    <circle cx="0" cy="0" r="28" fill="#0C4A6E" stroke="#38BDF8" stroke-width="2" filter="url(#nodeGlow)" />
+    <circle cx="0" cy="0" r="22" fill="#0369A1" />
+    <!-- Monitor / Screen Icon -->
+    <rect x="-9" y="-8" width="18" height="12" rx="2" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    <line x1="-3" y1="7" x2="3" y2="7" stroke="#FFFFFF" stroke-width="2" />
+    <line x1="0" y1="4" x2="0" y2="7" stroke="#FFFFFF" stroke-width="2" />
+    <text x="40" y="-4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" letter-spacing="0.05em">DIGITAL</text>
+    <text x="40" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="400" font-size="11" fill="#94A3B8">Connected systems. Better visibility.</text>
+  </g>
+
+  <!-- Node 4: OPERATIONS (Bottom Center) -->
+  <g transform="translate(480, 480)">
+    <circle cx="0" cy="0" r="28" fill="#1E1B4B" stroke="#A78BFA" stroke-width="2" filter="url(#nodeGlow)" />
+    <circle cx="0" cy="0" r="22" fill="#3B0764" />
+    <!-- Gears / Operations Icon -->
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    <path d="M-2 -8 H2 V-6 H-2 Z M-2 6 H2 V8 H-2 Z M-8 -2 V2 H-6 V-2 Z M6 -2 V2 H8 V-2 Z" fill="#FFFFFF" />
+    <text x="38" y="-4" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" letter-spacing="0.05em">OPERATIONS</text>
+    <text x="38" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="400" font-size="11" fill="#94A3B8">Efficient processes. Reliable performance.</text>
+  </g>
+
+  <!-- Node 5: MARKET (Bottom Left-Center) -->
+  <g transform="translate(340, 520)">
+    <circle cx="0" cy="0" r="26" fill="#1E293B" stroke="#60A5FA" stroke-width="2" filter="url(#nodeGlow)" />
+    <circle cx="0" cy="0" r="20" fill="#1D4ED8" />
+    <!-- Target / Users Icon -->
+    <circle cx="0" cy="0" r="6" fill="none" stroke="#FFFFFF" stroke-width="2" />
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF" />
+    <text x="36" y="-3" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="800" font-size="14" fill="#FFFFFF" letter-spacing="0.05em">MARKET</text>
+    <text x="36" y="14" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-weight="400" font-size="11" fill="#94A3B8">Right opportunities. Right customers.</text>
+  </g>
+</svg>
